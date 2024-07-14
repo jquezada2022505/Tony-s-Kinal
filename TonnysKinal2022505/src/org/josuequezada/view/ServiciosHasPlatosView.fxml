@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="950.0" style="-fx-background-color: #5c5c64;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuequezada.controller.ServiciosHasPlatosController">
+   <children>
+      <Line endX="235.635986328125" endY="183.75732421875" layoutX="333.0" layoutY="135.0" startX="2.393341064453125" startY="118.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="654.5453491210938" endY="1.0" layoutX="313.0" layoutY="115.0" startX="24.5146484375" startY="317.2120056152344" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="517.0" endY="-85.0" layoutX="283.0" layoutY="85.0" startX="220.878662109375" startY="-29.0" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="507.0" endY="104.21200561523438" layoutX="293.0" layoutY="95.0" startX="149.02996826171875" startY="-68.5606689453125" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="668.121337890625" endY="69.9693603515625" layoutX="303.0" layoutY="105.0" startX="-11.121337890625" startY="10.0" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="647.0" endY="-105.0" layoutX="303.0" layoutY="105.0" startX="395.96929931640625" startY="227.54534912109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="487.0" endY="219.66668701171875" layoutX="313.0" layoutY="115.0" startX="383.84796142578125" startY="219.66668701171875" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="323.0" layoutY="125.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="497.18133544921875" endY="-95.121337890625" layoutX="85.0" layoutY="73.0" startX="216.878662109375" startY="2.0" stroke="#fbeb04" strokeWidth="3.0" />
+      <Pane layoutX="-3.0" layoutY="-2.0" prefHeight="515.0" prefWidth="350.0" style="-fx-background-color: #041c7b;">
+         <children>
+            <Pane layoutX="112.0" layoutY="78.0" prefHeight="108.0" prefWidth="126.0" style="-fx-background-color: #049bdb; -fx-background-radius: 100 50 100 50;">
+               <children>
+                  <ImageView fitHeight="69.0" fitWidth="73.0" layoutX="29.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/ServicioHasPlato.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button layoutX="276.0" layoutY="449.0" mnemonicParsing="false" onAction="#menuPrincipal" style="-fx-background-color: #a8d054;" textFill="#fbeb04">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Regreso.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <VBox layoutX="20.0" layoutY="220.0" prefHeight="177.0" prefWidth="315.0">
+               <children>
+                  <Button fx:id="btnAgregar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="83.0" prefWidth="298.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Agregar" textFill="#dedede">
+                     <graphic>
+                        <ImageView fx:id="imgAgregar" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Agregar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="74.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="85.0" prefWidth="297.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Eliminar" textFill="#dedede">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fx:id="imgEliminar" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/Eliminar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <Pane layoutX="-3.0" layoutY="-1.0" prefHeight="56.0" prefWidth="349.0" style="-fx-background-color: #049bdb;">
+         <children>
+            <Label layoutX="28.0" layoutY="5.0" text="Servicios has Platos" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Line endX="372.34796142578125" endY="208.16665649414062" layoutX="323.0" layoutY="125.0" startX="63.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <GridPane layoutX="357.0" layoutY="60.0" prefHeight="90.0" prefWidth="577.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.0" minWidth="10.0" prefWidth="278.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.6666259765625" minWidth="10.0" prefWidth="299.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="41.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="lblCodigoPlato" text="Código Plato" textFill="#dedede" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblProductosCodigoProducto" text="Servicios Código Servicio" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblCodigoServicio" text="Código Producto" textFill="#dedede" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbCodigoPlato" disable="true" prefHeight="25.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cmbCodigoServicio" disable="true" prefHeight="25.0" prefWidth="299.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtServiciosCodigoServicio" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Line endX="243.5146484375" endY="195.878662109375" layoutX="323.0" layoutY="125.0" startX="181.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <ImageView fitHeight="100.0" fitWidth="115.0" layoutX="801.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoSecundario.png" />
+         </image>
+      </ImageView>
+      <Line endX="646.0" endY="52.090667724609375" layoutX="333.0" layoutY="135.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="343.0" layoutY="145.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="353.0" layoutY="155.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="363.0" layoutY="165.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="373.0" layoutY="175.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="383.0" layoutY="185.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="393.0" layoutY="195.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="403.0" layoutY="205.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="413.0" layoutY="215.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="423.0" layoutY="225.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="433.0" layoutY="235.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="443.0" layoutY="245.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="453.0" layoutY="255.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="463.0" layoutY="265.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="473.0" layoutY="275.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="483.0" layoutY="285.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="646.0" endY="52.090667724609375" layoutX="493.0" layoutY="295.0" startX="278.5146484375" startY="401.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <TableView fx:id="tblServiciosHasPlatos" layoutX="360.0" layoutY="163.0" onMouseClicked="#seleccionarElemento" prefHeight="335.0" prefWidth="577.0">
+         <columns>
+            <TableColumn fx:id="colServiciosCodigoServicios" prefWidth="191.0" text="Servicios Código Servicio" />
+            <TableColumn fx:id="colCodigoPlato" minWidth="0.0" prefWidth="204.0" text="Código Plato" />
+            <TableColumn fx:id="colCodigoServicio" maxWidth="524.0" minWidth="0.0" prefWidth="181.0" text="Código Servicio" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

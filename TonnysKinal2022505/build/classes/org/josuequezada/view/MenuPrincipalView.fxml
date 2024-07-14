@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #1c242c;" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuequezada.controller.MenuPrincipalController">
+   <children>
+      <Line endX="522.0" endY="-85.0" layoutX="78.0" layoutY="383.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="383.2426452636719" endY="134.0" layoutX="-309.0" layoutY="277.0" startX="306.17156982421875" startY="80.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="88.0" layoutY="393.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="98.0" layoutY="403.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="108.0" layoutY="413.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="118.0" layoutY="423.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="128.0" layoutY="433.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="138.0" layoutY="443.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="148.0" layoutY="453.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="158.0" layoutY="463.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="168.0" layoutY="473.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="178.0" layoutY="483.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="188.0" layoutY="493.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="198.0" layoutY="503.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="208.0" layoutY="513.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="218.0" layoutY="523.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="228.0" layoutY="533.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="479.0" endY="-7.0" layoutX="127.0" layoutY="1.0" startX="394.0" startY="94.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="163.17156982421875" endY="-21.82843017578125" layoutX="137.0" layoutY="11.0" startX="382.928955078125" startY="85.07107543945312" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="88.0" layoutY="393.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="467.17156982421875" endY="6.071075439453125" layoutX="-400.0" layoutY="412.0" startX="400.0" startY="88.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="351.17156982421875" endY="70.17156982421875" layoutX="-92.0" layoutY="150.0" startX="434.0" startY="146.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="207.0" endY="25.0" layoutX="78.0" layoutY="220.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="199.82843017578125" endY="26.242645263671875" layoutX="88.0" layoutY="230.0" startX="-90.82843017578125" startY="119.92892456054688" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="420.0" endY="-74.0" layoutX="100.0" layoutY="170.0" startX="242.07110595703125" startY="125.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="314.17156982421875" endY="-122.82843017578125" layoutX="4.0" layoutY="91.0" startX="256.17156982421875" startY="129.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="59.5" endY="167.0" layoutX="83.0" layoutY="124.0" startX="-85.82843017578125" startY="118.17156982421875" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="52.0" endY="61.0" layoutX="95.0" layoutY="-3.0" startX="-101.0" startY="124.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="44.82843017578125" endY="54.17156982421875" layoutX="102.0" layoutY="4.0" startX="10.0" startY="-19.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="375.0" endY="49.0" layoutX="-264.0" layoutY="9.0" startX="262.3431396484375" startY="93.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="372.071044921875" endY="39.0" layoutX="-254.0" layoutY="16.0" startX="338.0" startY="-42.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="78.0" layoutY="339.0" startX="-3.757354736328125" startY="72.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="76.0" layoutY="307.0" startX="267.0" startY="-6.757354736328125" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="411.0" endY="-85.0" layoutX="110.0" layoutY="180.0" startX="492.82843017578125" startY="41.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <ImageView fitHeight="600.0" fitWidth="600.0" layoutX="10.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoPrincipal.png" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="44.0" prefWidth="396.0" style="-fx-background-color: #5c5c5c;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProducto" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="Tipo Plato" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicios" text="Servicios" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#generarReporte" text="Reporte Empresa" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Reporte General TK" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaPresupuesto" text="Reporte Presupuesto" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Modulos Has">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProductosHasPlato" text="ProductosHasPlato" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciosHasPlato" text="ServiciosHasPlato" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciosHasEmpleados" text="ServiciosHasEmpleado" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="?">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuequezada.controller.LoginController">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="248.0" style="-fx-background-color: #1c242c;">
+         <children>
+            <Line endX="-572.575927734375" endY="370.45465087890625" layoutX="569.0" layoutY="-65.0" startX="-539.7879028320312" startY="339.9092712402344" stroke="#049cdb" strokeWidth="3.0" />
+            <ImageView fitHeight="125.0" fitWidth="125.0" layoutX="56.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Login.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="21.0" layoutY="191.0" text="LOGIN TONY´S KINAL" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="247.0" prefHeight="300.0" prefWidth="257.0" style="-fx-background-color: #1c242c;">
+         <children>
+            <Line endX="-379.45458984375" endY="498.45465087890625" layoutX="619.0" layoutY="-231.0" startX="-354.7879333496094" startY="231.78797912597656" stroke="#049cdb" strokeWidth="3.0" />
+            <Line endX="-300.0" endY="282.4240417480469" layoutX="85.0" layoutY="50.0" startX="221.33331298828125" startY="217.75735473632812" stroke="#acd054" strokeWidth="3.0" />
+            <ImageView fitHeight="40.0" fitWidth="110.0" layoutX="123.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/LogoSecundario.png" />
+               </image>
+            </ImageView>
+            <Line endX="-300.0" endY="282.4240417480469" layoutX="85.0" layoutY="50.0" startX="221.33331298828125" startY="217.75735473632812" stroke="#049cdb" strokeWidth="3.0" />
+            <Line endX="-300.0" endY="282.4240417480469" layoutX="95.0" layoutY="60.0" startX="221.33331298828125" startY="217.75735473632812" stroke="#049cdb" strokeWidth="3.0" />
+            <Line endX="-300.0" endY="282.4240417480469" layoutX="105.0" layoutY="70.0" startX="221.33331298828125" startY="217.75735473632812" stroke="#049cdb" strokeWidth="3.0" />
+            <Line endX="-617.1212768554688" endY="267.7879943847656" layoutX="608.0" layoutY="-251.0" startX="-325.45458984375" startY="248.45465087890625" stroke="#049cdb" strokeWidth="3.0" />
+            <Line endX="-713.45458984375" endY="241.0" layoutX="618.0" layoutY="-241.0" startX="-349.12127685546875" startY="318.45465087890625" stroke="#049cdb" strokeWidth="3.0" />
+            <Line endX="100.0" layoutX="135.0" layoutY="130.0" startX="-100.0" />
+            <Line endX="100.0" layoutX="135.0" layoutY="211.0" startX="-100.0" />
+            <PasswordField fx:id="txtPassword" layoutX="36.0" layoutY="183.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" styleClass="button2" stylesheets="@../resource/TonysKinal.css" />
+            <TextField fx:id="txtUsuario" layoutX="35.0" layoutY="100.0" prefHeight="25.0" prefWidth="200.0" promptText="User Name" styleClass="button2" stylesheets="@../resource/TonysKinal.css" />
+            <Line endX="-303.45458984375" endY="274.1213073730469" layoutX="75.0" layoutY="40.0" startX="221.33331298828125" startY="217.75735473632812" stroke="#049cdb" strokeWidth="3.0" />
+            <Button fx:id="btnLogin" layoutX="197.0" layoutY="256.0" mnemonicParsing="false" onAction="#Login" prefHeight="28.0" prefWidth="47.0" styleClass="button2" stylesheets="@../resource/TonysKinal.css" text="Login" />
+            <Hyperlink layoutX="82.0" layoutY="225.0" onAction="#ventanaUsuario" text="Registrese aqui" />
+         </children>
+      </Pane>
+      <Line endX="-560.7879028320312" endY="300.7879943847656" layoutX="552.0" layoutY="-240.0" startX="-525.0" startY="263.0" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-552.7879028320312" endY="221.45465087890625" layoutX="562.0" layoutY="-230.0" startX="-535.0" startY="253.0" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-570.1212768554688" endY="264.7879943847656" layoutX="562.0" layoutY="-230.0" startX="-535.0" startY="336.1213073730469" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-572.1212768554688" endY="384.121337890625" layoutX="572.0" layoutY="-220.0" startX="-545.0" startY="326.1213073730469" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-552.6665649414062" endY="482.7879943847656" layoutX="582.0" layoutY="-210.0" startX="-588.7879028320312" startY="358.7879638671875" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-583.45458984375" endY="526.121337890625" layoutX="582.0" layoutY="-210.0" startX="-554.7879028320312" startY="315.45465087890625" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-464.12127685546875" endY="225.78797912597656" layoutX="618.0" layoutY="-241.0" startX="-366.45458984375" startY="262.45465087890625" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-388.78790283203125" endY="212.78797912597656" layoutX="572.0" layoutY="-220.0" startX="-582.7879028320312" startY="249.45465087890625" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-230.1212615966797" endY="248.99996948242188" layoutX="234.0" layoutY="51.0" startX="254.54541015625" startY="197.78797912597656" stroke="#049cdb" strokeWidth="3.0" />
+      <Line endX="-214.66656494140625" endY="213.90933227539062" layoutX="244.0" layoutY="61.0" startX="76.54541015625" startY="205.78799438476562" stroke="#049cdb" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

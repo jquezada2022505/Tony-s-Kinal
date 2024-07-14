@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportePresupuesto" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="313791ec-0bb1-4e3b-9b3c-3fc7fadd146c">
+	<property name="ireport.zoom" value="0.909090909090918"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="codEmpresa_" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\Josue Quezada\\Documents\\NetBeansProjects\\TonnysKinal2022505\\TonnysKinal2022505\\src\\org\\josuequezada\\report\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[select
+*
+from Empresas E Inner Join Servicios S on
+E.codigoEmpresa = S.codigoEmpresa
+Inner Join
+Presupuestos P on E.codigoEmpresa = P.codigoEmpresa
+	where E.codigoEmpresa =  $P{codEmpresa_}
+		group by P.cantidadPresupuesto;]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoServicio" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaServicio" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tipoServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="horaServicio" class="java.sql.Time">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lugarServicio" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefonoContacto" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="codigoPresupuesto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaSolicitud" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cantidadPresupuesto" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="752" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="572" height="752" backcolor="#5C5C5C" uuid="fe1e76b7-377d-4551-910d-3ac0b6f4b1ed"/>
+			</rectangle>
+			<ellipse>
+				<reportElement x="0" y="702" width="61" height="49" forecolor="#049CDB" backcolor="#049CDB" uuid="59fe6a03-cd77-4ce9-9f99-d3bf278db0f0"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="523" y="358" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="0d3b4bae-807e-476a-807c-acdd94979280"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="495" y="404" width="34" height="39" forecolor="#C4D080" backcolor="#C4D080" uuid="3b1b94a9-93e1-425e-a2cd-e64b19d9a1be"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="62" y="649" width="61" height="53" forecolor="#C4D080" backcolor="#C4D080" uuid="28068355-ee5a-49f5-816d-888081c8cc6b"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="443" y="637" width="45" height="46" forecolor="#FBEB04" backcolor="#FBEB04" uuid="f051f165-299c-4240-adff-5c963b2ae61e"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="14" y="603" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="bd8e8440-f700-44f4-87ad-aca44f5efca1"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="504" y="693" width="68" height="58" forecolor="#F4941C" backcolor="#F4941C" uuid="2a05ba5f-0a4d-47c2-8035-6707007cf73a"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="504" y="599" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="7c940be0-01f0-4f6a-8b22-d75d5b1a30f7"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="20" y="253" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="5327b684-c29a-4491-835d-78b83fef3a6a"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="106" y="241" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="ee88d7da-7dbc-4b59-af60-90ab53f9359a"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="85" y="287" width="34" height="39" forecolor="#C4D080" backcolor="#C4D080" uuid="387d7ea2-9428-47e2-ab06-80b0a75a5247"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="123" y="695" width="68" height="56" forecolor="#FBEB04" backcolor="#FBEB04" uuid="97e18e4f-d691-48f6-8d2f-8af31cebd0e5"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="2" y="488" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="3fbaf9a2-bc4c-4c15-bc63-f518ea0d57f6"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="65" y="454" width="41" height="34" forecolor="#F4941C" backcolor="#F4941C" uuid="0021b58e-0bda-470d-ae9e-2ca4f69b333e"/>
+			</ellipse>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="726" width="572" height="26" forecolor="#000000" backcolor="#FBEB04" uuid="98299c1b-fc03-45b7-bdec-3d0462a7ea00"/>
+			</frame>
+			<ellipse>
+				<reportElement x="464" y="303" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="5a09a5cc-5d8f-44dc-b4a1-fbb7cd98301f"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="523" y="253" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="c038bab0-6ddd-48a3-b78e-af6e2750221b"/>
+			</ellipse>
+		</band>
+	</background>
+	<title>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="119" y="18" width="324" height="40" forecolor="#DEDEDE" uuid="d3f1fec5-fa98-4ab5-890e-0dd87daa1ada"/>
+				<textElement>
+					<font fontName="Arial" size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte Presupuesto]]></text>
+			</staticText>
+			<image>
+				<reportElement x="458" y="8" width="93" height="50" uuid="4c5ccdba-b597-43d3-8a5d-69ff8ffb5805"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="34" y="8" width="110" height="50" uuid="efcbae61-c8b2-4c03-88b1-03463146c5c4"/>
+				<imageExpression><![CDATA["C:\\Users\\Josue Quezada\\Documents\\NetBeansProjects\\TonnysKinal2022505\\TonnysKinal2022505\\TonnysKinal2022505\\src\\org\\josuequezada\\image\\Presupuesto.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="95" splitType="Stretch">
+			<textField>
+				<reportElement x="155" y="0" width="129" height="20" forecolor="#DEDEDE" uuid="5214a637-be81-4b01-b7ad-135156ef5e1c"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="155" y="26" width="191" height="20" forecolor="#DEDEDE" uuid="7b00e9a2-d434-40bf-8f7f-b956a21f5814"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="497" y="0" width="75" height="20" forecolor="#DEDEDE" uuid="b4d17e30-faac-4dde-a4f0-ba4542a02c35"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="0" width="109" height="20" forecolor="#DEDEDE" backcolor="#FFFFFF" uuid="735199c1-192d-481b-a1f6-7c915e4f1da0"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Empresa:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="26" width="67" height="20" forecolor="#DEDEDE" uuid="a4fbc28b-45c2-48d8-8cd6-0a5d795292e8"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="398" y="0" width="59" height="20" forecolor="#DEDEDE" uuid="564f1335-dcad-416c-9d5c-fe78b57c36b9"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="26" width="94" height="20" forecolor="#DEDEDE" uuid="3196037a-52ab-4e33-af2d-4eceedd87e53"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Solicitud:]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="470" y="26" width="102" height="20" forecolor="#DEDEDE" uuid="e480241d-9850-4919-9316-327b2b7c15c2"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaSolicitud}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="57" width="128" height="20" forecolor="#DEDEDE" uuid="00f67499-11ed-40fc-aced-74ff7d19ddd6"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Cantidad Presupuesto:]]></text>
+			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="155" y="57" width="191" height="20" forecolor="#DEDEDE" uuid="0f7c3741-1b80-4880-9a87-af4cd8d0ad54"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cantidadPresupuesto}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="4" width="92" height="20" forecolor="#DEDEDE" uuid="0602b6e7-3a9e-4286-8271-19fc54edcc01"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="4" width="79" height="20" forecolor="#DEDEDE" uuid="05e07e1e-b27d-4024-8b4a-315571fa10d9"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora Servicio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="284" y="4" width="85" height="20" forecolor="#DEDEDE" uuid="280c239f-1473-4068-9fab-49680f5f3285"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lugar Servicio]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="495" y="17" width="0" height="0" forecolor="#DEDEDE" uuid="dd04a724-6c2e-4682-b3c9-238a2c06827f"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoContacto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="464" y="4" width="108" height="20" forecolor="#DEDEDE" uuid="0f3be39d-b518-4fb4-b4c8-f13b339244e2"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Telefono Contacto]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="24" width="572" height="1" forecolor="#049CDB" backcolor="#049CDB" uuid="5519b833-31e6-459c-b972-5df8bf2cc91a"/>
+			</line>
+			<line>
+				<reportElement x="0" y="4" width="572" height="1" forecolor="#049CDB" backcolor="#049CDB" uuid="c35c0c23-d9fc-4032-8d1a-3794b1ad562c"/>
+			</line>
+			<line>
+				<reportElement x="131" y="5" width="1" height="35" forecolor="#049CDB" backcolor="#049CDB" uuid="6f6c019c-78d4-4b50-95ff-82524cfe2093"/>
+			</line>
+			<line>
+				<reportElement x="273" y="4" width="1" height="36" forecolor="#049CDB" backcolor="#049CDB" uuid="c64d7190-d65b-44bb-8739-bc593b693b0a"/>
+			</line>
+			<line>
+				<reportElement x="457" y="5" width="1" height="35" forecolor="#049CDB" backcolor="#049CDB" uuid="441765ea-f84e-480b-b40f-5f2ace3e43cf"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="0" width="131" height="20" forecolor="#DEDEDE" uuid="18ece5e8-1dff-4b2f-bc91-f3a103e0b859"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaServicio}]]></textFieldExpression>
+			</textField>
+			<textField pattern="K:mm a, z">
+				<reportElement x="142" y="0" width="131" height="20" forecolor="#DEDEDE" uuid="f65e2689-de4c-4df6-ac7f-16627a361e66"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{horaServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="0" width="173" height="20" forecolor="#DEDEDE" uuid="66ffde95-8277-4a96-9960-d43ed9b677d5"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lugarServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="0" width="100" height="20" forecolor="#DEDEDE" uuid="b5a54ac5-f15d-4740-ab8d-3e07d4054a6d"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefonoContacto}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="20" width="572" height="1" forecolor="#049CDB" backcolor="#049CDB" uuid="4dfee3ee-6bff-46d2-8b88-42e70da533bf"/>
+			</line>
+			<line>
+				<reportElement x="131" y="0" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="60c9b34f-192c-4078-8a88-727bd6ee487a"/>
+			</line>
+			<line>
+				<reportElement x="273" y="0" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="d00835a9-48b9-4ce8-9339-7d0c39252a1a"/>
+			</line>
+			<line>
+				<reportElement x="457" y="0" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="f772013b-242b-437b-b1e6-54380abe5391"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="41" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="43" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

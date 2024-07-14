@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteGeneralTonnysKinal" language="groovy" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fd6acdaa-866c-434d-a302-73309ca01627">
+	<property name="ireport.zoom" value="2.3579476910000112"/>
+	<property name="ireport.x" value="678"/>
+	<property name="ireport.y" value="179"/>
+	<parameter name="codEmpresa" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[Call sp_Reporte($P{codEmpresa})]]>
+	</queryString>
+	<field name="Nombre Empresa" class="java.lang.String"/>
+	<field name="Dirección" class="java.lang.String"/>
+	<field name="Teléfono" class="java.lang.String"/>
+	<field name="Fecha Solicitud" class="java.sql.Date"/>
+	<field name="Cantidad" class="java.math.BigDecimal"/>
+	<field name="Fecha Servicio" class="java.sql.Date"/>
+	<field name="Tipo Servicio" class="java.lang.String"/>
+	<field name="Hora Servicio" class="java.sql.Time"/>
+	<field name="Lugar Servicio" class="java.lang.String"/>
+	<field name="Teléfono Contacto" class="java.lang.String"/>
+	<field name="Nombre Empleado" class="java.lang.String"/>
+	<field name="Apellido Empleado" class="java.lang.String"/>
+	<field name="Grado Cocinero" class="java.lang.String"/>
+	<field name="Descripcion Empleado" class="java.lang.String"/>
+	<field name="Nombre Plato" class="java.lang.String"/>
+	<field name="Descripción Plato" class="java.lang.String"/>
+	<field name="Precio Plato" class="java.math.BigDecimal"/>
+	<field name="Decripcion Plato" class="java.lang.String"/>
+	<field name="Nombre Producto" class="java.lang.String"/>
+	<field name="Cantidad Producto" class="java.lang.Integer"/>
+	<background>
+		<band height="572" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="752" height="572" backcolor="#5C5C5C" uuid="c41e8b74-2afb-4cc8-9974-a6811682ea28"/>
+			</rectangle>
+			<ellipse>
+				<reportElement x="188" y="514" width="53" height="53" forecolor="#C4D080" backcolor="#C4D080" uuid="5c67f742-6219-4c04-a622-fa340de1cbc3"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="556" y="514" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="9d4a4727-f6f3-48b9-9a98-73fd7cd85c16"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="11" y="510" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="9b424ebd-dd85-4f8a-9293-bec940433a28"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="116" y="251" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="dc1029bc-7af1-40f6-b7a7-cad84cd1fec6"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="95" y="297" width="34" height="39" forecolor="#C4D080" backcolor="#C4D080" uuid="9a2ed3dc-cdc7-419b-8ffb-448bad139f12"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="30" y="263" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="fefd3a6c-8940-49ea-a3e0-baaa6ec3855a"/>
+			</ellipse>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="546" width="753" height="26" forecolor="#000000" backcolor="#FBEB04" uuid="9437d1a9-1f43-4fe5-a216-589da4e5405d"/>
+			</frame>
+			<ellipse>
+				<reportElement x="56" y="489" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="05b6ff09-6fc2-4b34-9da0-62032c97085a"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="11" y="471" width="53" height="53" forecolor="#C4D080" backcolor="#C4D080" uuid="b8af17aa-609a-4af3-906b-1dcd5dff3c89"/>
+			</ellipse>
+			<frame>
+				<reportElement mode="Opaque" x="0" y="134" width="753" height="1" forecolor="#000000" backcolor="#FBEB04" uuid="84b6a4dc-194b-491b-9cc1-29a1af6ea5f6"/>
+			</frame>
+			<ellipse>
+				<reportElement x="703" y="443" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="5b78b270-86cc-4674-aa70-d6bf7b1a9041"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="660" y="460" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="6982a442-6efb-40af-9013-06a72a0049fe"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="668" y="418" width="53" height="53" forecolor="#C4D080" backcolor="#C4D080" uuid="8a6c7a7a-5098-4158-a6db-b5905b186a0f"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="271" y="443" width="46" height="39" forecolor="#049CDB" backcolor="#049CDB" uuid="60499ff3-8c98-4dbe-a326-e034c7b40d5d"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="620" y="297" width="34" height="39" forecolor="#C4D080" backcolor="#C4D080" uuid="de1a7c02-76b4-49e1-9d7b-0871aa7c83ce"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="129" y="336" width="32" height="32" forecolor="#F4941C" backcolor="#F4941C" uuid="aa9d5b17-2e3b-4619-b127-3979acc3905d"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="510" y="496" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="9f9b4789-8e49-406b-a31e-7ae853531f07"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="222" y="496" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="5e8b7f7e-5c03-41b0-822e-66f89473fcf7"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="702" y="251" width="49" height="46" forecolor="#F4941C" backcolor="#F4941C" uuid="ff8fdec0-bbcc-43b5-b677-f1aac7cc0f3f"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="649" y="251" width="61" height="50" forecolor="#049CDB" backcolor="#049CDB" uuid="6d93dc44-cea1-470c-af44-c7c899276ba8"/>
+			</ellipse>
+			<ellipse>
+				<reportElement x="685" y="223" width="53" height="53" forecolor="#C4D080" backcolor="#C4D080" uuid="9ee06022-6145-4b6b-bbe3-cc862eac7667"/>
+			</ellipse>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="253" y="26" width="257" height="53" forecolor="#DEDEDE" uuid="00156560-60b3-45bf-a7fe-8a6cca052178"/>
+				<textElement>
+					<font fontName="Arial" size="32" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte General]]></text>
+			</staticText>
+			<image>
+				<reportElement x="11" y="14" width="145" height="50" uuid="20499759-11f0-4b9a-a574-62a5a6433cd7"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="630" y="0" width="144" height="79" uuid="db06e970-660a-43d9-87a4-13d51c9d698c"/>
+				<imageExpression><![CDATA["C:\\Users\\Josue Quezada\\Documents\\NetBeansProjects\\TonnysKinal2022505\\TonnysKinal2022505\\TonnysKinal2022505\\src\\org\\josuequezada\\image\\Empresa1.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" forecolor="#CECECE" uuid="941dbca1-94b7-492a-991a-8983649fd061"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Empresa:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" forecolor="#CECECE" uuid="7b745796-a1f5-4980-b2fc-766339553534"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nombre Empresa}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="156" y="40" width="55" height="20" forecolor="#CECECE" uuid="7496ebdb-b83f-453d-9252-f87b2bb4f1b8"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="211" y="40" width="122" height="20" forecolor="#CECECE" uuid="7a78c306-3952-46d8-8322-404cb5f4acac"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Dirección}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="56" height="20" forecolor="#CECECE" uuid="653c9423-6bf5-4a63-99ef-c19759933f0e"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="40" width="100" height="20" forecolor="#CECECE" uuid="677c2fc0-f85b-4b8a-b2c5-cccbe9ead135"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Teléfono}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="407" y="0" width="85" height="20" forecolor="#CECECE" uuid="a4d253a4-32f1-4d01-8b8f-a46916231142"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Solicitud:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="492" y="0" width="100" height="20" forecolor="#CECECE" uuid="16fb8acb-2ac0-4227-88db-757defa6fb84"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Fecha Solicitud}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="200" y="0" width="71" height="20" forecolor="#CECECE" uuid="2a703115-3f12-4db6-b0ab-8463f0f787f8"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Servicio:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="271" y="0" width="100" height="20" forecolor="#CECECE" uuid="031c07c8-07eb-47fe-a7d2-c70f764d343a"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Tipo Servicio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="333" y="40" width="74" height="20" forecolor="#CECECE" uuid="c1a719ae-2f9c-4a43-875a-1f304b60d2df"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lugar Servicio:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="418" y="40" width="160" height="20" forecolor="#CECECE" uuid="a66169ac-c956-48ec-b14b-b1b27051de86"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Lugar Servicio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="592" y="0" width="73" height="20" forecolor="#CECECE" uuid="c67dd261-de16-4ba6-8a70-ed012c41ff8c"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora Servicio:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="665" y="0" width="87" height="20" forecolor="#CECECE" uuid="7fdd42cd-9786-4ca7-8f42-683deb808c0c"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Hora Servicio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="578" y="40" width="76" height="20" forecolor="#CECECE" uuid="dd119397-45b1-4c87-85ae-85f8d6128c30"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha Servicio:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="660" y="40" width="92" height="20" forecolor="#CECECE" uuid="3953f7f9-1b6b-42ec-9ce3-3e12067e8662"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Fecha Servicio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="89" height="20" forecolor="#CECECE" uuid="4e4e4bbe-4bd6-4f14-b065-51254d0c61b4"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="10" width="91" height="20" forecolor="#CECECE" uuid="08e162e7-15fa-41a0-99f1-265eb793c3cd"/>
+				<textElement>
+					<font fontName="Arial" size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellido Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="10" width="82" height="20" forecolor="#CECECE" uuid="ab9ec028-8743-4a82-868d-b329f7a2e94b"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Grado Cocinero]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="271" y="10" width="114" height="20" forecolor="#CECECE" uuid="d6fa6ddd-ec27-4db5-8ce3-da53ab25f056"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripcion Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="10" width="71" height="20" forecolor="#CECECE" uuid="67c7633b-d8a3-47bf-8200-9fc8a8a34db6"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="10" width="86" height="20" forecolor="#CECECE" uuid="bebfe55d-8aad-45a0-836d-2ae7db1dba8d"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Descripción Plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="570" y="10" width="60" height="20" forecolor="#CECECE" uuid="46ed86bf-ad34-4ad9-937f-d9b395677f81"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Precio Plato]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="649" y="10" width="89" height="20" forecolor="#CECECE" uuid="b6daac3e-6485-41b1-afec-778b9eb71cd8"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Producto]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="9" width="752" height="1" forecolor="#049CDB" backcolor="#049CDB" uuid="578e23c4-8676-4a21-b9ae-537f17f5d158"/>
+			</line>
+			<line>
+				<reportElement x="93" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="a79e6dfa-1c86-4978-a5dd-cb7885f9976c"/>
+			</line>
+			<line>
+				<reportElement x="188" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="8a3a627d-7fda-407f-bf26-ecfe1bb3ee29"/>
+			</line>
+			<line>
+				<reportElement x="270" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="620d5e7b-69e4-4ea7-bf62-c0b0ed6a9c4c"/>
+			</line>
+			<line>
+				<reportElement x="385" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="b27058bf-2ea6-4907-b616-6c65e8102b5d"/>
+			</line>
+			<line>
+				<reportElement x="470" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="6ef7aafa-5e03-4030-959b-aa1420caf0a3"/>
+			</line>
+			<line>
+				<reportElement x="569" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="852e6f31-2368-4bbd-9623-a3059a0cf56f"/>
+			</line>
+			<line>
+				<reportElement x="648" y="10" width="1" height="20" forecolor="#049CDB" backcolor="#049CDB" uuid="d6ad2956-0c41-4316-8da1-d8eca2fb9c2e"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="21" width="752" height="1" forecolor="#049CDB" backcolor="#049CDB" uuid="13546589-cb0a-4356-a938-66e6e485c2b5"/>
+			</line>
+			<textField>
+				<reportElement x="0" y="2" width="89" height="20" forecolor="#CECECE" uuid="7afd13a5-0e9a-4852-b900-a4cbe7a5771e"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nombre Empleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="98" y="2" width="91" height="20" forecolor="#CECECE" uuid="3a254386-565a-40cf-b830-b9fef35299b2"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Apellido Empleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="189" y="1" width="82" height="20" forecolor="#CECECE" uuid="611f905d-48f8-482b-9611-13cf71d7bf68"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Grado Cocinero}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="2" width="114" height="20" forecolor="#CECECE" uuid="b30403bf-add9-45b7-84de-f8ce914dcdea"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Descripcion Empleado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="385" y="2" width="85" height="20" forecolor="#CECECE" uuid="841ae717-3fb3-4d2b-b3af-d6bf0c890e52"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nombre Plato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="2" width="100" height="20" forecolor="#CECECE" uuid="7a623eb9-5ac5-4d13-8fb5-289c99cb6507"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Descripción Plato}]]></textFieldExpression>
+			</textField>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="570" y="0" width="79" height="20" forecolor="#CECECE" uuid="14290d25-c459-40d4-9712-b307a9d878d8"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Precio Plato}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="649" y="4" width="62" height="20" forecolor="#CECECE" uuid="833564b9-3638-451f-b449-916b0dad598a"/>
+				<textElement>
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Nombre Producto}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="0" width="752" height="1" forecolor="#049CDB" backcolor="#049CDB" uuid="8db417ff-e33a-4e82-bfdf-8e679f1731a1"/>
+			</line>
+			<line>
+				<reportElement x="93" y="0" width="1" height="22" forecolor="#049CDB" backcolor="#049CDB" uuid="e10c4dc0-d861-4ee0-a225-b287ef4a82b2"/>
+			</line>
+			<line>
+				<reportElement x="188" y="0" width="1" height="22" forecolor="#049CDB" backcolor="#049CDB" uuid="c24a0d26-624b-49b0-b3db-86a29099e37d"/>
+			</line>
+			<line>
+				<reportElement x="270" y="0" width="1" height="22" forecolor="#049CDB" backcolor="#049CDB" uuid="5a1b57cf-fd95-4461-98b1-45c30512fcc8"/>
+			</line>
+			<line>
+				<reportElement x="385" y="0" width="1" height="22" forecolor="#049CDB" backcolor="#049CDB" uuid="a4c08efe-6038-4c65-9147-32bb37a7f096"/>
+			</line>
+			<line>
+				<reportElement x="470" y="0" width="1" height="22" forecolor="#049CDB" backcolor="#049CDB" uuid="621d6352-377b-45f8-8171-3c577e341ace"/>
+			</line>
+			<line>
+				<reportElement x="569" y="0" width="1" height="22" forecolor="#049CDB" backcolor="#049CDB" uuid="a305c7c9-d1b3-44ed-8f18-d7cdffbe3708"/>
+			</line>
+			<line>
+				<reportElement x="648" y="1" width="1" height="21" forecolor="#049CDB" backcolor="#049CDB" uuid="45690f5c-87f4-4790-9339-bf8d2726fb58"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

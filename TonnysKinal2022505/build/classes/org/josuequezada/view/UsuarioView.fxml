@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #1c242c;" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuequezada.controller.UsuarioController">
+   <children>
+      <Line endX="522.0" endY="-85.0" layoutX="78.0" layoutY="383.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="383.2426452636719" endY="134.0" layoutX="-309.0" layoutY="277.0" startX="306.17156982421875" startY="80.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="88.0" layoutY="393.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="98.0" layoutY="403.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="108.0" layoutY="413.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="118.0" layoutY="423.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="128.0" layoutY="433.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="138.0" layoutY="443.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="148.0" layoutY="453.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="158.0" layoutY="463.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="168.0" layoutY="473.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="178.0" layoutY="483.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="188.0" layoutY="493.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="198.0" layoutY="503.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="208.0" layoutY="513.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="218.0" layoutY="523.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="228.0" layoutY="533.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="454.17156982421875" endY="-11.82843017578125" layoutX="127.0" layoutY="1.0" startX="394.0" startY="94.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="163.17156982421875" endY="-21.82843017578125" layoutX="137.0" layoutY="11.0" startX="382.928955078125" startY="85.07107543945312" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="88.0" layoutY="393.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="467.17156982421875" endY="6.071075439453125" layoutX="-400.0" layoutY="412.0" startX="383.17156982421875" startY="47.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="351.17156982421875" endY="70.17156982421875" layoutX="-92.0" layoutY="150.0" startX="434.0" startY="146.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="207.0" endY="25.0" layoutX="78.0" layoutY="220.0" startX="-78.0" startY="117.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="199.82843017578125" endY="26.242645263671875" layoutX="88.0" layoutY="230.0" startX="-90.82843017578125" startY="119.92892456054688" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="420.0" endY="-74.0" layoutX="100.0" layoutY="170.0" startX="242.07110595703125" startY="125.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="314.17156982421875" endY="-122.82843017578125" layoutX="4.0" layoutY="91.0" startX="256.17156982421875" startY="129.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="59.5" endY="167.0" layoutX="83.0" layoutY="124.0" startX="-85.82843017578125" startY="118.17156982421875" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="52.0" endY="61.0" layoutX="95.0" layoutY="-3.0" startX="-101.0" startY="124.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="44.82843017578125" endY="54.17156982421875" layoutX="102.0" layoutY="4.0" startX="10.0" startY="-19.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="375.0" endY="49.0" layoutX="-264.0" layoutY="9.0" startX="262.3431396484375" startY="93.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="372.071044921875" endY="39.0" layoutX="-254.0" layoutY="16.0" startX="338.0" startY="-42.0" stroke="#049cdb" strokeWidth="10.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="78.0" layoutY="339.0" startX="-3.757354736328125" startY="72.0" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="522.0" endY="-85.0" layoutX="76.0" layoutY="307.0" startX="267.0" startY="-6.757354736328125" stroke="#049cdb" strokeWidth="4.0" />
+      <Line endX="411.0" endY="-85.0" layoutX="110.0" layoutY="180.0" startX="492.82843017578125" startY="41.17156982421875" stroke="#049cdb" strokeWidth="10.0" />
+      <Pane layoutX="25.0" layoutY="28.0" prefHeight="435.0" prefWidth="550.0" style="-fx-background-color: #1c242c;">
+         <children>
+            <Pane prefHeight="435.0" prefWidth="200.0" style="-fx-background-color: #049cdb;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="25.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/User.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="55.0" layoutY="189.0" text="Usuario" textFill="#dedede">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutY="251.0" prefHeight="140.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnAgregar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="95.0" prefWidth="200.0" style="-fx-background-color: #049cdb;" text="Agregar" textFill="#dedede">
+                           <graphic>
+                              <ImageView fx:id="imgAgregar" fitHeight="68.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Agregar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#eliminar" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #049cdb;" text="Eliminar" textFill="#dedede">
+                           <graphic>
+                              <ImageView fx:id="imgEliminar" fitHeight="60.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../image/Eliminar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Label layoutX="210.0" layoutY="30.0" text="Código Usuario" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoUsuario" editable="false" layoutX="210.0" layoutY="63.0" prefHeight="25.0" prefWidth="326.0" />
+            <TextField fx:id="txtApellidoUsuario" editable="false" layoutX="210.0" layoutY="207.0" prefHeight="25.0" prefWidth="326.0" />
+            <TextField fx:id="txtNombreUsuario" editable="false" layoutX="210.0" layoutY="134.0" prefHeight="25.0" prefWidth="326.0" />
+            <TextField fx:id="txtPassword" editable="false" layoutX="210.0" layoutY="352.0" prefHeight="25.0" prefWidth="326.0" />
+            <TextField fx:id="txtUsuario" editable="false" layoutX="210.0" layoutY="282.0" prefHeight="25.0" prefWidth="326.0" />
+            <Label layoutX="209.0" layoutY="107.0" text="Nombre Usuario" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="208.0" layoutY="180.0" text="Apellido Usuario" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="255.0" text="Usuario" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="210.0" layoutY="325.0" text="Contraseña" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

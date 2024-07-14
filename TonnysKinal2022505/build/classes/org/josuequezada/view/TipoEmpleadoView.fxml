@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="950.0" style="-fx-background-color: #5c5c64;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josuequezada.controller.TipoEmpleadoController">
+   <children>
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="333.0" layoutY="135.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="235.635986328125" endY="183.75732421875" layoutX="333.0" layoutY="135.0" startX="2.393341064453125" startY="118.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="637.0" endY="16.666671752929688" layoutX="313.0" layoutY="115.0" startX="24.5146484375" startY="317.2120056152344" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="517.0" endY="-85.0" layoutX="283.0" layoutY="85.0" startX="227.33334350585938" startY="-29.121295928955078" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="621.9999389648438" endY="132.121337890625" layoutX="293.0" layoutY="95.0" startX="158.66665649414062" startY="-67.7879867553711" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="609.8786010742188" endY="120.0" layoutX="303.0" layoutY="105.0" startX="-13.4853515625" startY="-4.121337890625" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="660.5452270507812" endY="-122.66666412353516" layoutX="303.0" layoutY="105.0" startX="395.96929931640625" startY="227.54534912109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="487.0" endY="219.66668701171875" layoutX="313.0" layoutY="115.0" startX="383.84796142578125" startY="219.66668701171875" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="323.0" layoutY="125.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="497.18133544921875" endY="-95.121337890625" layoutX="85.0" layoutY="73.0" startX="223.84799194335938" startY="6.211997985839844" stroke="#fbeb04" strokeWidth="3.0" />
+      <Pane layoutX="-3.0" layoutY="-2.0" prefHeight="515.0" prefWidth="350.0" style="-fx-background-color: #041c7b;">
+         <children>
+            <Pane layoutX="120.0" layoutY="86.0" prefHeight="100.0" prefWidth="115.0" style="-fx-background-color: #5c5c5c; -fx-background-radius: 100 50 100 50;">
+               <children>
+                  <ImageView fitHeight="69.0" fitWidth="102.0" layoutX="22.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/TipoEmpleado.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button layoutX="276.0" layoutY="449.0" mnemonicParsing="false" onAction="#menuPrincipal" style="-fx-background-color: #a8d054;" textFill="#fbeb04">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Regreso.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BOTTOM_LEFT" layoutX="14.0" layoutY="444.0" mnemonicParsing="false" onAction="#ventanaEmpleado" prefHeight="59.0" prefWidth="187.0" style="-fx-background-color: #041c7b;" text="Empleado" textFill="#dedede">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Empleado.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="-3.0" layoutY="-1.0" prefHeight="56.0" prefWidth="349.0" style="-fx-background-color: #049bdb;">
+         <children>
+            <Label layoutX="64.0" layoutY="2.0" text="Tipo Empleado" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="14.0" layoutY="184.0" prefHeight="215.0" prefWidth="315.0">
+         <children>
+            <Button fx:id="btnAgregar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#nuevo" prefHeight="64.0" prefWidth="298.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Agregar" textFill="#dedede">
+               <graphic>
+                  <ImageView fx:id="imgAgregar" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Agregar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#eliminar" prefHeight="64.0" prefWidth="297.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Eliminar" textFill="#dedede">
+               <graphic>
+                  <ImageView fx:id="imgEliminar" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#editar" prefHeight="48.0" prefWidth="298.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Editar" textFill="#dedede">
+               <graphic>
+                  <ImageView fx:id="imgEditar" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Actualizar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReporte" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#reporte" prefHeight="64.0" prefWidth="298.0" styleClass="button1" stylesheets="@../resource/TonysKinal.css" text="Reporte" textFill="#dedede">
+               <graphic>
+                  <ImageView fx:id="imgReporte" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Reporte.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Line endX="372.34796142578125" endY="208.16665649414062" layoutX="323.0" layoutY="125.0" startX="109.5146484375" startY="3.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <GridPane layoutX="357.0" layoutY="60.0" prefHeight="60.0" prefWidth="584.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.33331298828125" minWidth="10.0" prefWidth="220.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="364.0" minWidth="10.0" prefWidth="364.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="lblDescripcionTipoEmpleado" text=" Descripcion Tipo Empleado" textFill="#dedede" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="lblCodigoTipoEmpleado" text="Codigo Tipo Empleado" textFill="#dedede">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigoTipoEmpleado" editable="false" GridPane.columnIndex="1" />
+            <TextField fx:id="txtDescripcionTipoEmpleado" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Line endX="243.5146484375" endY="195.878662109375" layoutX="323.0" layoutY="125.0" startX="181.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <ImageView fitHeight="100.0" fitWidth="115.0" layoutX="793.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoSecundario.png" />
+         </image>
+      </ImageView>
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="343.0" layoutY="145.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="353.0" layoutY="155.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="363.0" layoutY="165.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="373.0" layoutY="175.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="383.0" layoutY="185.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="393.0" layoutY="195.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="403.0" layoutY="205.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="413.0" layoutY="215.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="423.0" layoutY="225.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="433.0" layoutY="235.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="443.0" layoutY="245.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="453.0" layoutY="255.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="463.0" layoutY="265.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="473.0" layoutY="275.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="483.0" layoutY="285.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <Line endX="656.6666870117188" endY="36.54533386230469" layoutX="493.0" layoutY="295.0" startX="277.5146484375" startY="404.878662109375" stroke="#fbeb04" strokeWidth="3.0" />
+      <TableView fx:id="tblTipoEmpleado" layoutX="358.0" layoutY="163.0" onMouseClicked="#seleccionarElemento" prefHeight="335.0" prefWidth="575.0">
+        <columns>
+          <TableColumn fx:id="colCodigoTipoEmpleado" prefWidth="292.33331298828125" text="Codigo Tipo Empleado" />
+          <TableColumn fx:id="colDescripcionTipoEmpleado" minWidth="0.0" prefWidth="278.6666259765625" text="Descripcion Tipo Empleado" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
